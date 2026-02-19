@@ -103,7 +103,7 @@ class RedisContainerTest {
                         Movie$.TITLE,             // text field to search
                         vectorAsFloat,            // query embedding as float[]
                         Movie$.PLOT_EMBEDDING,    // vector field to search
-                        0.5f                      // alpha: 0% vector, 100% text
+                        0.0f                      // alpha: 0% vector, 100% text
                 )
                 .limit(resultLimit)
                 .collect(Collectors.toList());
